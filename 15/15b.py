@@ -6,7 +6,7 @@ def hash(code):
         val %= 256
     return val
 
-file = open("15/input.txt")
+file = open("15/input.txt") #surprisingly simple one today
 
 codes = file.readline().replace("\n", "").split(",")
 
@@ -41,9 +41,7 @@ for i in range(len(boxes)):
 
     for j in range(len(box)):
         total += (i + 1) * (j + 1) * box[j][1]
-    
-for box in boxes:
-    print(box)
+
 print(total)
 
 file.close()
